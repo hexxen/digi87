@@ -1,8 +1,9 @@
 body{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	position: absolute;
-	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 html{font-size:80%;}
@@ -14,15 +15,15 @@ html{font-size:80%;}
 	align-items: center;
 }
 
-body{
-	background-image: url(../assets/butterflies.png);
+/*body{
+	/*background-image: url(../assets/butterflies.png);
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
 	position: fixed;
 	width: 100%;
-	height: 100%;
-}
+
+}*/
 
 .section{
 	position: relative;
@@ -153,25 +154,6 @@ body{
 	z-index: 200;
 }
 
-.logocontainer{
-	position: absolute;
-	top: 3%;
-	left: 5%;
-/*
-	height: : 15%;
-	width: : 15%;*/
-	height: 6%;
-	width: 60%;
-
-	overflow: visible;
-	
-	z-index: 200;
-
-	background-image: url(../assets/logo.png);
-	background-size: auto 100%;
-	background-position: left;
-	background-repeat: no-repeat;
-}
 
 .apropos{
 	position: absolute;
@@ -406,12 +388,38 @@ body{
 
 
 
+
+
+.logocontainer{
+	position: absolute;
+	top: 20px;
+	left: 50px;
+
+/*	bottom: 78%;
+
+	height: : 15%;
+	width: : 15%;
+	height: 6%;*/
+
+	height: 50px;
+	width: 60%;
+
+	overflow: visible;
+	
+	z-index: 200;
+
+	background-image: url(../assets/logo.png);
+	background-size: auto 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
 /* LOBBY ******************************************************/
 
 .GFXoneone{
 	position: relative;
-	top: 27%;
-	left: 5%;
+	top: 40%;
+	left: 40%;
 
 /*	height: 40%; 
 	width: 30%; */
@@ -437,8 +445,8 @@ body{
 
 .GFXoneoneStencil{
 	position: absolute;
-	top: 27%;
-	left: 5%;
+	top: 40%;
+	left: 40%;
 
 	height: 60%;
 	width: 20%;
@@ -456,8 +464,8 @@ body{
 
 .GFXoneoneStencilShade{
 	position: absolute;
-	top: 27%;
-	left: 5%;
+	top: 40%;
+	left: 40%;
 
 	height: 60%;
 	width: 20%;
@@ -473,6 +481,10 @@ body{
 	background-repeat: no-repeat;
 }
 
+.butterflies{
+	height: 1000px;
+	width: 100%;
+}
 
 /* SLIDE ******************************************************/
 
@@ -502,4 +514,217 @@ body{
 .button.custom:focus {
 	background-color: darken($buttoncolor, 5%);
 	color: black;
+}
+
+
+
+
+
+
+/* GFXonetwo *************************************************/
+
+.GFXonetwo{
+	height: 500px;
+	width: 500px;
+
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	position: relative;
+	left: 30%;
+
+	background-image: url(../assets/montreal100.png);
+	background-position: center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+
+/* GFXonethree *************************************************/
+
+.GFXonethree{
+	height: 500px;
+	width: 100%;
+
+	padding-bottom: 100px;
+
+	background-image: url(../assets/TRENDSperiodical.png);
+	background-position: center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+
+/* PARTS ******************************************************/
+
+.part{
+	height: 1000px;
+	width: 100%;
+}
+
+.projectOne , .projectTwo{
+	float: left;
+}
+
+.labOne , .labTwo{
+	float: right;
+}
+
+.partOneGutter{
+	height: 20%;
+}
+
+.partOneDiv{
+	height: 36%;
+	width: 50%;
+	padding-bottom: 4%;
+	padding-right: 5%;
+	padding-left: 5%;
+
+	overflow: hidden;
+
+	background-image: url(../assets/montreal100.png);
+	background-position: center;
+	background-size: 50% auto;
+	background-repeat: no-repeat;
+}
+
+
+
+.parttwoText{
+	float: left;
+
+	height: 500px;
+	width: 50%;
+
+	margin-top: 10%;
+	padding: 10%;
+	padding-top: 20%;
+
+	font-weight: bolder;
+	font-size: 32px;
+
+	text-align: center;
+}
+
+.parttwoGFXone{
+	float: left;
+	
+	margin-top: 10%;
+	padding-top: 10%;
+
+	height: 60%;
+	width: 50%;
+}
+
+.parttwoVid{
+	width: auto;
+	height: 100%;
+	
+}
+
+#parttwoGFXoneVid{
+	z-index: 400;
+}
+
+
+.partthreeText{
+	float: left;
+
+	height: 20%;
+	width: 100%;
+
+	padding: 10%;
+	padding-top: 20%;
+
+	font-weight: light;
+	font-size: 32px;
+
+	text-align: center;
+}
+
+
+.partthreeGFXone{
+	float: left;
+	
+	height: 100%;
+	width: 100%;
+}
+
+
+.partthreeVid{
+	width: 100%;
+	height: auto;
+	
+}
+
+
+
+
+/* PAGES ************************************************/
+
+.detailsPage{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 1000px;
+	opacity: 0;
+
+	pointer-events:none;
+	background-color: white;
+}
+
+.detailsPage video {
+	float: left;
+	clear: both;
+
+	width: 100%;
+	height: 1000px;
+
+	object-fit: cover;
+	object-position: center;
+	background: #FECB58;
+	background: -webkit-linear-gradient(top right, #FECB58, #27AACF);
+	background: -o-linear-gradient(top right, #FECB58, #27AACF);
+	background: linear-gradient(to bottom left, #FECB58, #27AACF);
+}
+
+
+
+#projectonePage{
+	opacity: 0;
+	z-index: 100;
+	overflow-y: scroll;
+}
+
+.projectonePagetext{
+	float: left;
+	padding-top: 100px;
+	height: 1000px;
+	width: 100%;
+
+	background-color: white;
+	overflow: hidden;
+
+	background-image: url(../assets/projet.png);
+	background-position: center;
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+}
+
+
+#labonePage{
+	top: 2000px;
+	height: 1000px;
+	overflow-y: scroll;
+}
+
+.close{
+	float: right;
+}
+
+.labonePageone , .labonePagetwo{
+	height: 1000px;
+	width: 100%;
 }
